@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BlankFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="@string/title"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ti"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/title"
+        android:paddingLeft="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center|left"
+        android:layout_below="@id/ti"
+        android:paddingLeft="10dp"
+        android:text="@string/note"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/c"
+        android:layout_width="match_parent"
+        android:layout_height="341dp"
+        android:layout_below="@+id/content"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/b"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/c"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#DF8A0B"
+        android:text="@string/add_note" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/c"
+        android:backgroundTint="#DF8A0B"
+        android:layout_toEndOf="@id/b"
+        android:text="@string/reset" />
+
+
+</RelativeLayout>
